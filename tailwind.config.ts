@@ -14,21 +14,21 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['SF Pro Display', 'Inter', 'system-ui', 'sans-serif'],
+        sans: ["Inter", "system-ui", "sans-serif"],
+        display: ["SF Pro Display", "Inter", "system-ui", "sans-serif"],
       },
       colors: {
         // FocusBuddy Brand Colors
-        ink: '#0B0D0F',
-        charcoal: '#111418',
-        graphite: '#2A2F36',
-        mist: '#F6F7F9',
+        ink: "#0B0D0F",
+        charcoal: "#111418",
+        graphite: "#2A2F36",
+        mist: "#F6F7F9",
 
         // Accent Colors
-        'focus-green': '#1DB954',
-        'break-orange': '#FFA400',
-        'busy-red': '#FF4D4F',
-        'info-teal': '#31C3C7',
+        "focus-green": "#1DB954",
+        "break-orange": "#FFA400",
+        "busy-red": "#FF4D4F",
+        "info-teal": "#31C3C7",
 
         // Shadcn color system maintained for components
         border: "hsl(var(--border))",
@@ -70,7 +70,7 @@ export default {
         md: "0.75rem",
         sm: "0.5rem",
         xl: "1.25rem",
-        '2xl': "1.5rem",
+        "2xl": "1.5rem",
       },
       keyframes: {
         "accordion-down": {
