@@ -584,55 +584,79 @@ export default function Index() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                title: "Premium Hardware",
-                caption: "Matte finish with tactile controls",
-                highlight: '3.2" Display',
+                title: "Premium Glass Design",
+                caption: "Crystal-clear display with Gorilla Glass protection",
+                highlight: "Scratch Resistant",
+                image: "https://images.pexels.com/photos/3623359/pexels-photo-3623359.jpeg"
               },
               {
-                title: "LED Status Flag",
-                caption: "Green focus, orange break, red busy",
-                highlight: "At-a-glance",
+                title: "LED Status Indicators",
+                caption: "Sophisticated RGB lighting with ambient glow",
+                highlight: "RGB Status",
+                image: "https://images.pexels.com/photos/1820358/pexels-photo-1820358.jpeg"
               },
               {
-                title: "Rotary Control",
-                caption: "Precise time adjustment with satisfying click",
-                highlight: "1-120 min",
+                title: "Precision Engineering",
+                caption: "Swiss-made rotary control with haptic feedback",
+                highlight: "Tactile Feel",
+                image: "https://images.pexels.com/photos/247769/pexels-photo-247769.jpeg"
               },
               {
-                title: "Presence Sensor",
-                caption: "24 GHz mmWave auto-pause technology",
+                title: "mmWave Technology",
+                caption: "Advanced 24 GHz presence detection sensor",
                 highlight: "Auto-pause",
+                image: null
               },
               {
-                title: "Night Mode",
-                caption: "Gentle backlight that won't disturb",
-                highlight: "Dimmable",
+                title: "Executive Workspace",
+                caption: "Designed for sophisticated modern offices",
+                highlight: "Premium Fit",
+                image: "https://images.pexels.com/photos/9442211/pexels-photo-9442211.jpeg"
               },
               {
-                title: "Desk Integration",
-                caption: "Compact footprint for any workspace",
-                highlight: "110×72×22mm",
+                title: "Luxury Experience",
+                caption: "Unboxing worthy of the premium product inside",
+                highlight: "Gift Ready",
+                image: "https://images.pexels.com/photos/3989394/pexels-photo-3989394.jpeg"
               },
             ].map((item, index) => (
               <div
                 key={index}
                 className="aspect-video bg-card border rounded-xl overflow-hidden group cursor-pointer hover:shadow-lg transition-all duration-300"
               >
-                <div className="w-full h-full p-6 flex flex-col justify-between group-hover:scale-105 transition-transform duration-300">
-                  <div>
-                    <div className="text-lg font-semibold mb-2">
-                      {item.title}
-                    </div>
-                    <div className="text-sm text-muted-foreground mb-4">
-                      {item.caption}
+                {item.image ? (
+                  <div className="relative w-full h-full">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <div className="text-white font-semibold mb-1">{item.title}</div>
+                      <div className="text-white/80 text-sm mb-3">{item.caption}</div>
+                      <div className="inline-flex items-center px-3 py-1 bg-focus-green/90 text-white rounded-full text-xs font-medium">
+                        {item.highlight}
+                      </div>
                     </div>
                   </div>
-                  <div className="self-end">
-                    <div className="inline-flex items-center px-3 py-1 bg-focus-green/10 text-focus-green rounded-full text-xs font-medium">
-                      {item.highlight}
+                ) : (
+                  <div className="w-full h-full p-6 flex flex-col justify-between group-hover:scale-105 transition-transform duration-300">
+                    <div>
+                      <div className="text-lg font-semibold mb-2">
+                        {item.title}
+                      </div>
+                      <div className="text-sm text-muted-foreground mb-4">
+                        {item.caption}
+                      </div>
+                    </div>
+                    <div className="self-end">
+                      <div className="inline-flex items-center px-3 py-1 bg-focus-green/10 text-focus-green rounded-full text-xs font-medium">
+                        {item.highlight}
+                      </div>
                     </div>
                   </div>
-                </div>
+                )}
               </div>
             ))}
           </div>
