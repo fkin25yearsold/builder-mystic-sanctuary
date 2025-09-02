@@ -498,6 +498,207 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Detailed App Features */}
+      <section className="py-20">
+        <div className="container-width section-padding">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Mobile App Deep Dive</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Every tab is designed to enhance your focus practice — from quick starts to deep insights.
+            </p>
+          </div>
+
+          <div className="space-y-20">
+            {/* Home Tab Detail */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-12 h-12 bg-focus-green rounded-xl flex items-center justify-center">
+                    <Home className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold">Home Dashboard</h3>
+                </div>
+                <p className="text-muted-foreground text-lg">
+                  Your focus command center with at-a-glance status and one-tap actions.
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-focus-green rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <span className="font-medium">Current Status Card</span>
+                      <p className="text-sm text-muted-foreground">Large timer display with preset name and presence detection</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-focus-green rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <span className="font-medium">Quick Preset Pills</span>
+                      <p className="text-sm text-muted-foreground">25/5, 50/10, 90/20, Custom — swipe to start instantly</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-focus-green rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <span className="font-medium">Today Summary</span>
+                      <p className="text-sm text-muted-foreground">Sessions completed, focus minutes, and progress toward daily goals</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-focus-green rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <span className="font-medium">Calendar Preview</span>
+                      <p className="text-sm text-muted-foreground">Next 3 hours of meetings with Auto-DND suggestions</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-mist to-muted/50 rounded-2xl p-8 text-center">
+                <div className="bg-white dark:bg-card rounded-xl p-6 shadow-lg max-w-sm mx-auto">
+                  <div className="text-sm text-muted-foreground mb-2">Good morning, Ajay</div>
+                  <div className="text-3xl font-bold mb-1">25:00</div>
+                  <div className="text-focus-green text-sm font-medium mb-4">Pomodoro 25/5 • At desk</div>
+                  <div className="flex space-x-2 mb-4">
+                    <div className="bg-focus-green text-white text-xs px-3 py-1 rounded-full">Start</div>
+                    <div className="border text-xs px-3 py-1 rounded-full">Skip Break</div>
+                  </div>
+                  <div className="text-xs text-muted-foreground">2 sessions today • 45 min focus</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Timer Tab Detail */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="order-2 lg:order-1 bg-gradient-to-br from-mist to-muted/50 rounded-2xl p-8 text-center">
+                <div className="bg-white dark:bg-card rounded-xl p-6 shadow-lg max-w-sm mx-auto">
+                  <div className="flex justify-between items-center mb-4">
+                    <div className="text-sm text-muted-foreground">Device Remote</div>
+                    <div className="flex items-center space-x-1">
+                      <div className="w-2 h-2 bg-focus-green rounded-full"></div>
+                      <span className="text-xs">Connected</span>
+                    </div>
+                  </div>
+                  <div className="w-24 h-24 border-4 border-focus-green rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-xl font-bold">45</span>
+                  </div>
+                  <div className="grid grid-cols-2 gap-2 mb-4">
+                    <div className="bg-focus-green text-white text-xs py-2 rounded">Start</div>
+                    <div className="border text-xs py-2 rounded">Pause</div>
+                  </div>
+                  <div className="text-xs text-muted-foreground">Presence: High • LED: Auto</div>
+                </div>
+              </div>
+              <div className="order-1 lg:order-2 space-y-6">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-12 h-12 bg-focus-green rounded-xl flex items-center justify-center">
+                    <Clock className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold">Timer Control</h3>
+                </div>
+                <p className="text-muted-foreground text-lg">
+                  Full remote control of your FocusBuddy device with custom presets and settings.
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-focus-green rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <span className="font-medium">Dial Control</span>
+                      <p className="text-sm text-muted-foreground">Drag to set minutes (1-120), toggle between focus and break durations</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-focus-green rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <span className="font-medium">Custom Presets</span>
+                      <p className="text-sm text-muted-foreground">Save multiple configurations with auto-start, Focus Mode triggers</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-focus-green rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <span className="font-medium">Presence Settings</span>
+                      <p className="text-sm text-muted-foreground">Adjust sensor sensitivity, grace periods, meeting mode</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-focus-green rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <span className="font-medium">Phone Timer Mode</span>
+                      <p className="text-sm text-muted-foreground">Run sessions on phone with haptics and lock screen controls</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Insights Tab Detail */}
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                <div className="flex items-center space-x-3 mb-4">
+                  <div className="w-12 h-12 bg-focus-green rounded-xl flex items-center justify-center">
+                    <BarChart3 className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold">Insights & Analytics</h3>
+                </div>
+                <p className="text-muted-foreground text-lg">
+                  Discover your focus patterns and optimize your productivity with detailed analytics.
+                </p>
+                <div className="space-y-4">
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-focus-green rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <span className="font-medium">Peak Focus Hours</span>
+                      <p className="text-sm text-muted-foreground">Bar chart showing when you're most productive throughout the day</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-focus-green rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <span className="font-medium">Interruption Analysis</span>
+                      <p className="text-sm text-muted-foreground">Auto-pauses, manual pauses, and patterns with improvement suggestions</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-focus-green rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <span className="font-medium">Session History</span>
+                      <p className="text-sm text-muted-foreground">Detailed timeline with notes, tags, linked tasks, and export options</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <div className="w-2 h-2 bg-focus-green rounded-full mt-2 flex-shrink-0"></div>
+                    <div>
+                      <span className="font-medium">Completion Metrics</span>
+                      <p className="text-sm text-muted-foreground">Success rates, average session length, break quality analysis</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="bg-gradient-to-br from-mist to-muted/50 rounded-2xl p-8 text-center">
+                <div className="bg-white dark:bg-card rounded-xl p-6 shadow-lg max-w-sm mx-auto">
+                  <div className="text-sm font-medium mb-4">This Week</div>
+                  <div className="grid grid-cols-2 gap-4 mb-4">
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-focus-green">4.2h</div>
+                      <div className="text-xs text-muted-foreground">Focus time</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl font-bold">89%</div>
+                      <div className="text-xs text-muted-foreground">Completion</div>
+                    </div>
+                  </div>
+                  <div className="h-20 bg-muted rounded-lg mb-4 flex items-end justify-center space-x-1 p-2">
+                    {[40, 75, 60, 90, 85, 45, 30].map((height, i) => (
+                      <div key={i} className="bg-focus-green/60 rounded-sm w-4" style={{height: `${height}%`}}></div>
+                    ))}
+                  </div>
+                  <div className="text-xs text-muted-foreground">Peak: 9-11 AM</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Mobile App Features */}
       <section className="py-20 bg-muted/50">
         <div className="container-width section-padding">
