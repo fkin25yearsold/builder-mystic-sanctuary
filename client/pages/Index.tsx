@@ -453,26 +453,47 @@ export default function Index() {
       {/* Gallery */}
       <section id="gallery" className="py-20">
         <div className="container-width section-padding">
-          <h2 className="text-3xl font-bold text-center mb-12">See FocusBuddy in Action</h2>
-          
+          <h2 className="text-3xl font-bold text-center mb-12">FocusBuddy Design Details</h2>
+
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: "Dark Device Hero", caption: "Premium matte finish in charcoal" },
-              { title: "Light Device Variant", caption: "Clean aesthetic for any workspace" },
-              { title: "Side Angle View", caption: "Rotary knob and button controls" },
-              { title: "Screen Close-up", caption: "Large, glanceable focus display" },
-              { title: "LED Flag States", caption: "Green focus, orange break, red busy" },
-              { title: "Lifestyle Desk Shot", caption: "Perfect companion for deep work" }
+              { title: "Premium Hardware", caption: "Matte finish with tactile controls", highlight: "3.2\" Display" },
+              { title: "LED Status Flag", caption: "Green focus, orange break, red busy", highlight: "At-a-glance" },
+              { title: "Rotary Control", caption: "Precise time adjustment with satisfying click", highlight: "1-120 min" },
+              { title: "Presence Sensor", caption: "24 GHz mmWave auto-pause technology", highlight: "Auto-pause" },
+              { title: "Night Mode", caption: "Gentle backlight that won't disturb", highlight: "Dimmable" },
+              { title: "Desk Integration", caption: "Compact footprint for any workspace", highlight: "110×72×22mm" }
             ].map((item, index) => (
-              <div key={index} className="aspect-video bg-muted rounded-xl overflow-hidden group cursor-pointer">
-                <div className="w-full h-full bg-gradient-to-br from-charcoal/10 to-graphite/10 flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                  <div className="text-center">
-                    <div className="text-lg font-medium mb-2">{item.title}</div>
-                    <div className="text-sm text-muted-foreground">{item.caption}</div>
+              <div key={index} className="aspect-video bg-card border rounded-xl overflow-hidden group cursor-pointer hover:shadow-lg transition-all duration-300">
+                <div className="w-full h-full p-6 flex flex-col justify-between group-hover:scale-105 transition-transform duration-300">
+                  <div>
+                    <div className="text-lg font-semibold mb-2">{item.title}</div>
+                    <div className="text-sm text-muted-foreground mb-4">{item.caption}</div>
+                  </div>
+                  <div className="self-end">
+                    <div className="inline-flex items-center px-3 py-1 bg-focus-green/10 text-focus-green rounded-full text-xs font-medium">
+                      {item.highlight}
+                    </div>
                   </div>
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Featured Device Image */}
+          <div className="mt-16 max-w-4xl mx-auto">
+            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+              <img
+                src="https://cdn.builder.io/api/v1/image/assets%2Fc84913c58ceb44cab7b4f494aa13eb36%2Fe81b9aa8d70c46aabafb55df0af07212?format=webp&width=800"
+                alt="FocusBuddy device showing time and timer display"
+                className="w-full h-auto"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+              <div className="absolute bottom-6 left-6 text-white">
+                <h3 className="text-2xl font-bold mb-2">Real Focus Time</h3>
+                <p className="text-white/90">Digital display shows current time and active timer with LED status indicators</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
