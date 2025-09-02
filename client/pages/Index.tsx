@@ -172,7 +172,12 @@ export default function Index() {
       subtitle: "35% off MSRP",
       price: "$80",
       originalPrice: "$119",
-      includes: ["FocusBuddy device", "USB-C cable", "Quick-start guide", "+ $20 shipping"],
+      includes: [
+        "FocusBuddy device",
+        "USB-C cable",
+        "Quick-start guide",
+        "+ $20 shipping",
+      ],
       badge: "Limited Quantity",
       isPopular: false,
     },
@@ -185,7 +190,7 @@ export default function Index() {
         "Device + USB-C cable",
         "Soft carry pouch",
         "Quick-start guide",
-        "+ $20 shipping"
+        "+ $20 shipping",
       ],
       badge: "Most Popular",
       isPopular: true,
@@ -587,37 +592,42 @@ export default function Index() {
                 title: "Premium Glass Design",
                 caption: "Crystal-clear display with Gorilla Glass protection",
                 highlight: "Scratch Resistant",
-                image: "https://images.pexels.com/photos/3623359/pexels-photo-3623359.jpeg"
+                image:
+                  "https://images.pexels.com/photos/3623359/pexels-photo-3623359.jpeg",
               },
               {
                 title: "LED Status Indicators",
                 caption: "Sophisticated RGB lighting with ambient glow",
                 highlight: "RGB Status",
-                image: "https://images.pexels.com/photos/1820358/pexels-photo-1820358.jpeg"
+                image:
+                  "https://images.pexels.com/photos/1820358/pexels-photo-1820358.jpeg",
               },
               {
                 title: "Precision Engineering",
                 caption: "Swiss-made rotary control with haptic feedback",
                 highlight: "Tactile Feel",
-                image: "https://images.pexels.com/photos/247769/pexels-photo-247769.jpeg"
+                image:
+                  "https://images.pexels.com/photos/247769/pexels-photo-247769.jpeg",
               },
               {
                 title: "mmWave Technology",
                 caption: "Advanced 24 GHz presence detection sensor",
                 highlight: "Auto-pause",
-                image: null
+                image: null,
               },
               {
                 title: "Executive Workspace",
                 caption: "Designed for sophisticated modern offices",
                 highlight: "Premium Fit",
-                image: "https://images.pexels.com/photos/9442211/pexels-photo-9442211.jpeg"
+                image:
+                  "https://images.pexels.com/photos/9442211/pexels-photo-9442211.jpeg",
               },
               {
                 title: "Luxury Experience",
                 caption: "Unboxing worthy of the premium product inside",
                 highlight: "Gift Ready",
-                image: "https://images.pexels.com/photos/3989394/pexels-photo-3989394.jpeg"
+                image:
+                  "https://images.pexels.com/photos/3989394/pexels-photo-3989394.jpeg",
               },
             ].map((item, index) => (
               <div
@@ -633,8 +643,12 @@ export default function Index() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                     <div className="absolute bottom-4 left-4 right-4">
-                      <div className="text-white font-semibold mb-1">{item.title}</div>
-                      <div className="text-white/80 text-sm mb-3">{item.caption}</div>
+                      <div className="text-white font-semibold mb-1">
+                        {item.title}
+                      </div>
+                      <div className="text-white/80 text-sm mb-3">
+                        {item.caption}
+                      </div>
                       <div className="inline-flex items-center px-3 py-1 bg-focus-green/90 text-white rounded-full text-xs font-medium">
                         {item.highlight}
                       </div>
@@ -673,13 +687,18 @@ export default function Index() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
-                  <h3 className="text-2xl font-bold mb-2">Premium Glass Design</h3>
+                  <h3 className="text-2xl font-bold mb-2">
+                    Premium Glass Design
+                  </h3>
                   <p className="text-white/90">
-                    Crystal-clear display with precision-engineered controls and ambient LED lighting
+                    Crystal-clear display with precision-engineered controls and
+                    ambient LED lighting
                   </p>
                 </div>
                 <div className="absolute top-6 right-6 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
-                  <span className="text-white text-sm font-medium">$80 + $20 shipping</span>
+                  <span className="text-white text-sm font-medium">
+                    $80 + $20 shipping
+                  </span>
                 </div>
               </div>
             </div>
@@ -694,8 +713,12 @@ export default function Index() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute bottom-4 left-4">
-                  <h4 className="text-white font-semibold mb-1">Glass Surface Technology</h4>
-                  <p className="text-white/80 text-sm">Scratch-resistant with anti-glare coating</p>
+                  <h4 className="text-white font-semibold mb-1">
+                    Glass Surface Technology
+                  </h4>
+                  <p className="text-white/80 text-sm">
+                    Scratch-resistant with anti-glare coating
+                  </p>
                 </div>
               </div>
 
@@ -707,8 +730,12 @@ export default function Index() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute bottom-4 left-4">
-                  <h4 className="text-white font-semibold mb-1">Executive Workspace</h4>
-                  <p className="text-white/80 text-sm">Designed for sophisticated work environments</p>
+                  <h4 className="text-white font-semibold mb-1">
+                    Executive Workspace
+                  </h4>
+                  <p className="text-white/80 text-sm">
+                    Designed for sophisticated work environments
+                  </p>
                 </div>
               </div>
             </div>
@@ -717,16 +744,26 @@ export default function Index() {
             <div className="max-w-4xl mx-auto bg-gradient-to-r from-charcoal to-graphite rounded-2xl p-8 text-white">
               <div className="grid md:grid-cols-3 gap-8 text-center">
                 <div>
-                  <div className="text-2xl font-bold text-focus-green mb-2">Gorilla Glass</div>
-                  <p className="text-sm text-white/80">Military-grade protection</p>
+                  <div className="text-2xl font-bold text-focus-green mb-2">
+                    Gorilla Glass
+                  </div>
+                  <p className="text-sm text-white/80">
+                    Military-grade protection
+                  </p>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-focus-green mb-2">Swiss Made</div>
+                  <div className="text-2xl font-bold text-focus-green mb-2">
+                    Swiss Made
+                  </div>
                   <p className="text-sm text-white/80">Precision engineering</p>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-focus-green mb-2">LED Matrix</div>
-                  <p className="text-sm text-white/80">Ambient status lighting</p>
+                  <div className="text-2xl font-bold text-focus-green mb-2">
+                    LED Matrix
+                  </div>
+                  <p className="text-sm text-white/80">
+                    Ambient status lighting
+                  </p>
                 </div>
               </div>
             </div>
@@ -738,9 +775,12 @@ export default function Index() {
       <section className="py-20 bg-muted/30">
         <div className="container-width section-padding">
           <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Luxury Unboxing Experience</h2>
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+              Luxury Unboxing Experience
+            </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Every detail crafted to reflect the premium quality inside — from packaging to product.
+              Every detail crafted to reflect the premium quality inside — from
+              packaging to product.
             </p>
           </div>
 
@@ -749,29 +789,45 @@ export default function Index() {
               <div className="space-y-6">
                 <div className="space-y-4">
                   <h3 className="text-xl font-bold flex items-center space-x-2">
-                    <div className="w-5 h-5 bg-focus-green rounded text-white flex items-center justify-center text-xs">✓</div>
+                    <div className="w-5 h-5 bg-focus-green rounded text-white flex items-center justify-center text-xs">
+                      ✓
+                    </div>
                     <span>Premium Materials</span>
                   </h3>
                   <div className="space-y-3">
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-focus-green rounded-full mt-2 flex-shrink-0"></div>
                       <div>
-                        <span className="font-medium">Gorilla Glass Display</span>
-                        <p className="text-sm text-muted-foreground">Scratch-resistant, anti-glare coating for perfect visibility</p>
+                        <span className="font-medium">
+                          Gorilla Glass Display
+                        </span>
+                        <p className="text-sm text-muted-foreground">
+                          Scratch-resistant, anti-glare coating for perfect
+                          visibility
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-focus-green rounded-full mt-2 flex-shrink-0"></div>
                       <div>
-                        <span className="font-medium">Aerospace-grade Aluminum</span>
-                        <p className="text-sm text-muted-foreground">Precision CNC-machined with premium matte finish</p>
+                        <span className="font-medium">
+                          Aerospace-grade Aluminum
+                        </span>
+                        <p className="text-sm text-muted-foreground">
+                          Precision CNC-machined with premium matte finish
+                        </p>
                       </div>
                     </div>
                     <div className="flex items-start space-x-3">
                       <div className="w-2 h-2 bg-focus-green rounded-full mt-2 flex-shrink-0"></div>
                       <div>
-                        <span className="font-medium">Swiss Rotary Encoder</span>
-                        <p className="text-sm text-muted-foreground">Satisfying tactile feedback with 360° precision control</p>
+                        <span className="font-medium">
+                          Swiss Rotary Encoder
+                        </span>
+                        <p className="text-sm text-muted-foreground">
+                          Satisfying tactile feedback with 360° precision
+                          control
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -810,9 +866,13 @@ export default function Index() {
                 <div className="bg-focus-green/10 rounded-lg p-4">
                   <div className="flex items-center space-x-2 mb-2">
                     <div className="text-focus-green font-bold">$80</div>
-                    <span className="text-sm text-muted-foreground">+ $20 shipping</span>
+                    <span className="text-sm text-muted-foreground">
+                      + $20 shipping
+                    </span>
                   </div>
-                  <p className="text-sm text-muted-foreground">Early Bird pricing — limited time offer</p>
+                  <p className="text-sm text-muted-foreground">
+                    Early Bird pricing — limited time offer
+                  </p>
                 </div>
               </div>
             </div>
@@ -826,15 +886,24 @@ export default function Index() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 text-white">
-                  <h4 className="text-xl font-bold mb-2">Gift-Worthy Packaging</h4>
-                  <p className="text-white/90 text-sm">Magnetic closure box with premium foam insert</p>
+                  <h4 className="text-xl font-bold mb-2">
+                    Gift-Worthy Packaging
+                  </h4>
+                  <p className="text-white/90 text-sm">
+                    Magnetic closure box with premium foam insert
+                  </p>
                 </div>
               </div>
 
               {/* Floating elements */}
               <div className="absolute -top-4 -right-4 bg-white dark:bg-card rounded-lg p-3 shadow-lg">
-                <div className="text-xs text-muted-foreground mb-1">Contact</div>
-                <a href="mailto:ajaybabuy239@gmail.com" className="text-sm font-medium text-focus-green">
+                <div className="text-xs text-muted-foreground mb-1">
+                  Contact
+                </div>
+                <a
+                  href="mailto:ajaybabuy239@gmail.com"
+                  className="text-sm font-medium text-focus-green"
+                >
                   ajaybabuy239@gmail.com
                 </a>
               </div>
@@ -1606,7 +1675,10 @@ export default function Index() {
               <div className="space-y-3">
                 <div className="text-sm">
                   <span className="text-muted-foreground">Email:</span>
-                  <a href="mailto:ajaybabuy239@gmail.com" className="ml-2 text-focus-green hover:underline">
+                  <a
+                    href="mailto:ajaybabuy239@gmail.com"
+                    className="ml-2 text-focus-green hover:underline"
+                  >
                     ajaybabuy239@gmail.com
                   </a>
                 </div>
