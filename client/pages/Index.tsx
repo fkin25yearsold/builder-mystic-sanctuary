@@ -734,6 +734,115 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Premium Packaging Experience */}
+      <section className="py-20 bg-muted/30">
+        <div className="container-width section-padding">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Luxury Unboxing Experience</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Every detail crafted to reflect the premium quality inside — from packaging to product.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold flex items-center space-x-2">
+                    <div className="w-5 h-5 bg-focus-green rounded text-white flex items-center justify-center text-xs">✓</div>
+                    <span>Premium Materials</span>
+                  </h3>
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-focus-green rounded-full mt-2 flex-shrink-0"></div>
+                      <div>
+                        <span className="font-medium">Gorilla Glass Display</span>
+                        <p className="text-sm text-muted-foreground">Scratch-resistant, anti-glare coating for perfect visibility</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-focus-green rounded-full mt-2 flex-shrink-0"></div>
+                      <div>
+                        <span className="font-medium">Aerospace-grade Aluminum</span>
+                        <p className="text-sm text-muted-foreground">Precision CNC-machined with premium matte finish</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-focus-green rounded-full mt-2 flex-shrink-0"></div>
+                      <div>
+                        <span className="font-medium">Swiss Rotary Encoder</span>
+                        <p className="text-sm text-muted-foreground">Satisfying tactile feedback with 360° precision control</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold">Included in Box</h3>
+                  <div className="grid grid-cols-2 gap-3 text-sm">
+                    <div className="flex items-center space-x-2">
+                      <Check className="w-4 h-4 text-focus-green" />
+                      <span>FocusBuddy Device</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <Check className="w-4 h-4 text-focus-green" />
+                      <span>USB-C Cable (2m)</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <Check className="w-4 h-4 text-focus-green" />
+                      <span>Premium Carry Pouch</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <Check className="w-4 h-4 text-focus-green" />
+                      <span>Quick Start Guide</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <Check className="w-4 h-4 text-focus-green" />
+                      <span>Cleaning Cloth</span>
+                    </div>
+                    <div className="flex items-center space-x-2">
+                      <Check className="w-4 h-4 text-focus-green" />
+                      <span>Warranty Card</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="bg-focus-green/10 rounded-lg p-4">
+                  <div className="flex items-center space-x-2 mb-2">
+                    <div className="text-focus-green font-bold">$80</div>
+                    <span className="text-sm text-muted-foreground">+ $20 shipping</span>
+                  </div>
+                  <p className="text-sm text-muted-foreground">Early Bird pricing — limited time offer</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="aspect-square relative overflow-hidden rounded-2xl shadow-2xl">
+                <img
+                  src="https://images.pexels.com/photos/3989394/pexels-photo-3989394.jpeg"
+                  alt="Luxury packaging design"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                <div className="absolute bottom-6 left-6 text-white">
+                  <h4 className="text-xl font-bold mb-2">Gift-Worthy Packaging</h4>
+                  <p className="text-white/90 text-sm">Magnetic closure box with premium foam insert</p>
+                </div>
+              </div>
+
+              {/* Floating elements */}
+              <div className="absolute -top-4 -right-4 bg-white dark:bg-card rounded-lg p-3 shadow-lg">
+                <div className="text-xs text-muted-foreground mb-1">Contact</div>
+                <a href="mailto:ajaybabuy239@gmail.com" className="text-sm font-medium text-focus-green">
+                  ajaybabuy239@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Detailed App Features */}
       <section className="py-20">
         <div className="container-width section-padding">
