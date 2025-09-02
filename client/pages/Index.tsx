@@ -170,23 +170,24 @@ export default function Index() {
     {
       title: "Super Early Bird",
       subtitle: "35% off MSRP",
-      price: "$79",
+      price: "$80",
       originalPrice: "$119",
-      includes: ["FocusBuddy device", "USB-C cable", "Quick-start guide"],
+      includes: ["FocusBuddy device", "USB-C cable", "Quick-start guide", "+ $20 shipping"],
       badge: "Limited Quantity",
       isPopular: false,
     },
     {
       title: "Early Bird",
-      subtitle: "25% off MSRP",
-      price: "$89",
+      subtitle: "Best Value",
+      price: "$80",
       originalPrice: "$119",
       includes: [
         "Device + USB-C cable",
         "Soft carry pouch",
         "Quick-start guide",
+        "+ $20 shipping"
       ],
-      badge: null,
+      badge: "Most Popular",
       isPopular: true,
     },
     {
@@ -1401,7 +1402,7 @@ export default function Index() {
                   FAQ
                 </button>
                 <a
-                  href="#"
+                  href="mailto:ajaybabuy239@gmail.com"
                   className="block hover:text-foreground transition-colors"
                 >
                   Contact
@@ -1416,16 +1417,24 @@ export default function Index() {
             </div>
 
             <div className="space-y-4">
-              <h4 className="font-medium">Stay Updated</h4>
-              <div className="flex space-x-2">
-                <input
-                  type="email"
-                  placeholder="Enter email"
-                  className="flex-1 px-3 py-2 text-sm border border-border rounded-lg bg-background"
-                />
-                <button className="px-4 py-2 bg-focus-green text-white rounded-lg hover:bg-focus-green/90 transition-colors text-sm">
-                  Join
-                </button>
+              <h4 className="font-medium">Contact & Updates</h4>
+              <div className="space-y-3">
+                <div className="text-sm">
+                  <span className="text-muted-foreground">Email:</span>
+                  <a href="mailto:ajaybabuy239@gmail.com" className="ml-2 text-focus-green hover:underline">
+                    ajaybabuy239@gmail.com
+                  </a>
+                </div>
+                <div className="flex space-x-2">
+                  <input
+                    type="email"
+                    placeholder="Enter email for updates"
+                    className="flex-1 px-3 py-2 text-sm border border-border rounded-lg bg-background"
+                  />
+                  <button className="px-4 py-2 bg-focus-green text-white rounded-lg hover:bg-focus-green/90 transition-colors text-sm">
+                    Join
+                  </button>
+                </div>
               </div>
               <p className="text-xs text-muted-foreground">
                 Early-bird pricing and exclusive updates
