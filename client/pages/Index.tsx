@@ -477,52 +477,151 @@ export default function Index() {
         </div>
       </section>
 
-      {/* App Section */}
+      {/* Mobile App Features */}
       <section className="py-20 bg-muted/50">
         <div className="container-width section-padding">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold mb-4">Complete Mobile Companion</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Five powerful tabs that transform your phone into a focus command center — with app blocking, habit tracking, and seamless device control.
+            </p>
+          </div>
+
+          {/* 5-Tab Overview */}
+          <div className="grid md:grid-cols-5 gap-6 mb-16">
+            {[
+              { name: 'Home', icon: <Home className="w-6 h-6" />, desc: 'Dashboard & quick start' },
+              { name: 'Timer', icon: <Clock className="w-6 h-6" />, desc: 'Remote control & presets' },
+              { name: 'Habits', icon: <Target className="w-6 h-6" />, desc: 'Goals & streaks' },
+              { name: 'Insights', icon: <BarChart3 className="w-6 h-6" />, desc: 'Stats & analytics' },
+              { name: 'Device', icon: <Settings className="w-6 h-6" />, desc: 'Hardware & integrations' }
+            ].map((tab, index) => (
+              <div key={index} className="bg-card border rounded-xl p-6 text-center hover:shadow-lg transition-shadow">
+                <div className="w-12 h-12 bg-focus-green/10 rounded-full flex items-center justify-center mx-auto mb-4 text-focus-green">
+                  {tab.icon}
+                </div>
+                <h3 className="font-semibold mb-2">{tab.name}</h3>
+                <p className="text-sm text-muted-foreground">{tab.desc}</p>
+              </div>
+            ))}
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl lg:text-4xl font-bold mb-4">Powerful Companion App</h2>
-                <p className="text-lg text-muted-foreground">
-                  Remote control, habit tracking, insights, and distraction control — all privacy-first.
-                </p>
-              </div>
+              <div className="space-y-6">
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold flex items-center space-x-2">
+                    <Smartphone className="w-5 h-5 text-focus-green" />
+                    <span>Smart Phone Integration</span>
+                  </h3>
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-3">
+                      <Check className="w-5 h-5 text-focus-green mt-0.5 flex-shrink-0" />
+                      <div>
+                        <span className="font-medium">iOS Focus Modes</span>
+                        <p className="text-sm text-muted-foreground">Automatically triggers Screen Time limits and hides distracting apps</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <Check className="w-5 h-5 text-focus-green mt-0.5 flex-shrink-0" />
+                      <div>
+                        <span className="font-medium">Android App Blocking</span>
+                        <p className="text-sm text-muted-foreground">Create allow-lists and DND modes using official Accessibility APIs</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <Check className="w-5 h-5 text-focus-green mt-0.5 flex-shrink-0" />
+                      <div>
+                        <span className="font-medium">Emergency Bypass</span>
+                        <p className="text-sm text-muted-foreground">30-second unlock for urgent access — always safe and reversible</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-              <div className="space-y-4">
-                <div className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-focus-green" />
-                  <span>Remote control and session management</span>
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold flex items-center space-x-2">
+                    <Calendar className="w-5 h-5 text-focus-green" />
+                    <span>Calendar & Task Integration</span>
+                  </h3>
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-3">
+                      <Check className="w-5 h-5 text-focus-green mt-0.5 flex-shrink-0" />
+                      <div>
+                        <span className="font-medium">Auto-Schedule Focus Blocks</span>
+                        <p className="text-sm text-muted-foreground">Google/Apple Calendar integration with meeting awareness</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <Check className="w-5 h-5 text-focus-green mt-0.5 flex-shrink-0" />
+                      <div>
+                        <span className="font-medium">Task App Sync</span>
+                        <p className="text-sm text-muted-foreground">Connect to Todoist, Asana, Notion — link sessions to specific tasks</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <Check className="w-5 h-5 text-focus-green mt-0.5 flex-shrink-0" />
+                      <div>
+                        <span className="font-medium">Auto-DND Mode</span>
+                        <p className="text-sm text-muted-foreground">Quiet notifications during focus blocks and meetings</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-focus-green" />
-                  <span>Goals, streaks, and habit building</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-focus-green" />
-                  <span>Focus insights and completion metrics</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-focus-green" />
-                  <span>iOS Focus Modes & Android app blocking</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-focus-green" />
-                  <span>Calendar sync with Google, Apple, Notion</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <Check className="w-5 h-5 text-focus-green" />
-                  <span>Privacy-first local storage</span>
+
+                <div className="space-y-4">
+                  <h3 className="text-xl font-bold flex items-center space-x-2">
+                    <Target className="w-5 h-5 text-focus-green" />
+                    <span>Habit Building & Analytics</span>
+                  </h3>
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-3">
+                      <Check className="w-5 h-5 text-focus-green mt-0.5 flex-shrink-0" />
+                      <div>
+                        <span className="font-medium">Smart Insights</span>
+                        <p className="text-sm text-muted-foreground">Peak focus hours, completion rates, interruption patterns</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <Check className="w-5 h-5 text-focus-green mt-0.5 flex-shrink-0" />
+                      <div>
+                        <span className="font-medium">Guided Programs</span>
+                        <p className="text-sm text-muted-foreground">14-day Deep Work challenges, Thesis Sprint routines</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <Check className="w-5 h-5 text-focus-green mt-0.5 flex-shrink-0" />
+                      <div>
+                        <span className="font-medium">Streak Tracking</span>
+                        <p className="text-sm text-muted-foreground">Visual calendar heatmap, badges, and weekly goal progress</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-              {['Dashboard', 'Timer Remote', 'Habits', 'Insights'].map((screen, index) => (
-                <div key={index} className="aspect-[9/16] bg-card border rounded-2xl p-4 flex items-center justify-center">
-                  <div className="text-center">
-                    <Smartphone className="w-8 h-8 text-muted-foreground mx-auto mb-2" />
-                    <div className="text-sm font-medium">{screen}</div>
+              {[
+                { screen: 'Home Dashboard', features: ['Current status', 'Quick presets', 'Today summary', 'Calendar preview'] },
+                { screen: 'Timer Remote', features: ['Device control', 'Custom presets', 'Presence settings', 'LED & audio'] },
+                { screen: 'Habits & Goals', features: ['Weekly targets', 'Streak calendar', 'Guided programs', 'Achievement badges'] },
+                { screen: 'Insights & Stats', features: ['Focus analytics', 'Peak hours', 'Session history', 'Export data'] }
+              ].map((app, index) => (
+                <div key={index} className="aspect-[9/16] bg-card border rounded-2xl p-4 hover:shadow-lg transition-shadow">
+                  <div className="h-full flex flex-col">
+                    <div className="text-center mb-4">
+                      <Smartphone className="w-8 h-8 text-focus-green mx-auto mb-2" />
+                      <div className="text-sm font-semibold">{app.screen}</div>
+                    </div>
+                    <div className="space-y-2 flex-1">
+                      {app.features.map((feature, i) => (
+                        <div key={i} className="text-xs text-muted-foreground flex items-center space-x-1">
+                          <div className="w-1 h-1 bg-focus-green rounded-full flex-shrink-0"></div>
+                          <span>{feature}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               ))}
