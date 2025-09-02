@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { 
-  Clock, 
-  Radar, 
+import {
+  Clock,
+  Radar,
   Smartphone,
   Calendar,
   Lightbulb,
@@ -23,7 +23,10 @@ import {
   BarChart3,
   Focus,
   Pause,
-  RotateCcw
+  RotateCcw,
+  Home,
+  Target,
+  Settings
 } from 'lucide-react';
 
 export default function Index() {
@@ -324,17 +327,30 @@ export default function Index() {
 
             <div className="relative">
               <div className="aspect-square max-w-lg mx-auto relative">
-                {/* Device mockup placeholder */}
-                <div className="w-full h-full bg-gradient-to-br from-charcoal to-ink rounded-3xl p-8 flex items-center justify-center shadow-2xl">
-                  <div className="bg-gray-900 rounded-2xl p-6 w-48 h-32 flex flex-col items-center justify-center">
-                    <div className="text-4xl font-bold text-white mb-2">25:00</div>
-                    <div className="text-xs text-gray-400 uppercase tracking-wide">FOCUS</div>
-                    <div className="w-3 h-3 bg-focus-green rounded-full mt-2"></div>
+                {/* Actual FocusBuddy device */}
+                <div className="relative overflow-hidden rounded-3xl shadow-2xl">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2Fc84913c58ceb44cab7b4f494aa13eb36%2Fe81b9aa8d70c46aabafb55df0af07212?format=webp&width=800"
+                    alt="FocusBuddy Smart Productivity Timer"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {/* Feature callouts */}
+                <div className="absolute top-4 right-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur rounded-lg p-3 text-xs font-medium shadow-lg max-w-40">
+                  <div className="flex items-center space-x-2 mb-1">
+                    <div className="w-2 h-2 bg-focus-green rounded-full"></div>
+                    <span>Live presence sensing</span>
+                  </div>
+                  <div className="flex items-center space-x-2">
+                    <div className="w-2 h-2 bg-info-teal rounded-full"></div>
+                    <span>Auto-pause on leave</span>
                   </div>
                 </div>
-                {/* Light mode toggle preview */}
-                <div className="absolute top-4 right-4 bg-white dark:bg-gray-800 rounded-lg p-2 text-xs font-medium shadow-lg">
-                  Light mode preview
+                <div className="absolute bottom-4 left-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur rounded-lg p-3 text-xs font-medium shadow-lg">
+                  <div className="flex items-center space-x-2">
+                    <RotateCcw className="w-3 h-3" />
+                    <span>Rotary control</span>
+                  </div>
                 </div>
               </div>
             </div>
