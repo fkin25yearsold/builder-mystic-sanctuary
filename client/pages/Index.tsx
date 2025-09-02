@@ -661,21 +661,73 @@ export default function Index() {
             ))}
           </div>
 
-          {/* Featured Device Image */}
-          <div className="mt-16 max-w-4xl mx-auto">
-            <div className="relative overflow-hidden rounded-2xl shadow-2xl">
-              <img
-                src="https://cdn.builder.io/api/v1/image/assets%2Fc84913c58ceb44cab7b4f494aa13eb36%2Fe81b9aa8d70c46aabafb55df0af07212?format=webp&width=800"
-                alt="FocusBuddy device showing time and timer display"
-                className="w-full h-auto"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-              <div className="absolute bottom-6 left-6 text-white">
-                <h3 className="text-2xl font-bold mb-2">Real Focus Time</h3>
-                <p className="text-white/90">
-                  Digital display shows current time and active timer with LED
-                  status indicators
-                </p>
+          {/* Featured Device Collection */}
+          <div className="mt-16 space-y-8">
+            {/* Main Device Image */}
+            <div className="max-w-4xl mx-auto">
+              <div className="relative overflow-hidden rounded-2xl shadow-2xl">
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2Fc84913c58ceb44cab7b4f494aa13eb36%2Fe81b9aa8d70c46aabafb55df0af07212?format=webp&width=800"
+                  alt="FocusBuddy device showing time and timer display"
+                  className="w-full h-auto"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                <div className="absolute bottom-6 left-6 text-white">
+                  <h3 className="text-2xl font-bold mb-2">Premium Glass Design</h3>
+                  <p className="text-white/90">
+                    Crystal-clear display with precision-engineered controls and ambient LED lighting
+                  </p>
+                </div>
+                <div className="absolute top-6 right-6 bg-white/10 backdrop-blur-sm rounded-lg px-4 py-2">
+                  <span className="text-white text-sm font-medium">$80 + $20 shipping</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Premium Features Showcase */}
+            <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+              <div className="relative overflow-hidden rounded-xl shadow-lg">
+                <img
+                  src="https://images.pexels.com/photos/3623359/pexels-photo-3623359.jpeg"
+                  alt="Glass surface detail showing premium materials"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4">
+                  <h4 className="text-white font-semibold mb-1">Glass Surface Technology</h4>
+                  <p className="text-white/80 text-sm">Scratch-resistant with anti-glare coating</p>
+                </div>
+              </div>
+
+              <div className="relative overflow-hidden rounded-xl shadow-lg">
+                <img
+                  src="https://images.pexels.com/photos/9442211/pexels-photo-9442211.jpeg"
+                  alt="Modern workspace with premium accessories"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4">
+                  <h4 className="text-white font-semibold mb-1">Executive Workspace</h4>
+                  <p className="text-white/80 text-sm">Designed for sophisticated work environments</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Premium Materials Highlight */}
+            <div className="max-w-4xl mx-auto bg-gradient-to-r from-charcoal to-graphite rounded-2xl p-8 text-white">
+              <div className="grid md:grid-cols-3 gap-8 text-center">
+                <div>
+                  <div className="text-2xl font-bold text-focus-green mb-2">Gorilla Glass</div>
+                  <p className="text-sm text-white/80">Military-grade protection</p>
+                </div>
+                <div>
+                  <div className="text-2xl font-bold text-focus-green mb-2">Swiss Made</div>
+                  <p className="text-sm text-white/80">Precision engineering</p>
+                </div>
+                <div>
+                  <div className="text-2xl font-bold text-focus-green mb-2">LED Matrix</div>
+                  <p className="text-sm text-white/80">Ambient status lighting</p>
+                </div>
               </div>
             </div>
           </div>
